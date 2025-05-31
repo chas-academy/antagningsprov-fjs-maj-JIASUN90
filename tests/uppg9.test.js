@@ -24,6 +24,7 @@ describe('uppg9', () => {
     expect(consoleSpy.mock.calls.length).toBeGreaterThan(0);
   
     consoleSpy.mock.calls.forEach(call => {
+      console.log('@@@@  call', call)
       // Destructure both arguments: the number and its label
       const [num, label] = call;
       expect(typeof num).toBe('number');
