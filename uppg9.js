@@ -7,8 +7,23 @@ function uppg9 (){
     // resultatet ska loggas i formatet: talet och sen ordet "jämt" eller "udda"
 
     // anropa funktionen och skicka med en array som argument
-
+    function sort(arr){
+        for(let i = 0; i < arr.length; i++){
+            const tal = arr[i];
+            if(tal % 2 === 0){
+                console.log(tal + " jämt");
+            } else {
+                console.log(tal + " udda");
+            }
+        }
+    }
   
+    
+    const siffror = [1,2,3,4,5,6];
+    
+    sort(siffror);
 }
+
+uppg9()
 
 module.exports = { uppg9 };
